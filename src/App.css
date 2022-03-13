@@ -1,0 +1,18 @@
+@import url("https://fonts.googleapis.com/css2?family=Fredoka&display=swap");
+
+.App {
+  text-align: center;
+
+  font-family: "Fredoka", sans-serif;
+}
+
+.hone {
+  font-size: 7rem;
+  color: #242582;
+}
+
+@media only screen and (max-width: 500px) {
+  .hone {
+    font-size: 5rem;
+  }
+}

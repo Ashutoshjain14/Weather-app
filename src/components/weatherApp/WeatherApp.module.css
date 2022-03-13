@@ -1,0 +1,101 @@
+.box {
+  text-align: center;
+  background-color: rgba(204, 204, 204, 0.425);
+  padding-top: 30px;
+  padding-bottom: 30px;
+  max-width: 40rem;
+  height: 67.5rem;
+  width: 90%;
+  margin: 2rem auto;
+  animation: wapp-appear 1.5s ease-out forwards;
+  border-radius: 45px;
+  box-shadow: 3px 6px rgba(51, 71, 71, 0.493);
+
+  /* position: absolute; */
+  /* transform: translate(-50%, -50%); */
+  overflow: hidden;
+}
+
+input {
+  padding: 12px 20px;
+  margin: 8px;
+  box-sizing: border-box;
+  border-radius: 15px;
+  background-color: rgba(240, 231, 231, 0.521);
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-color: rgb(0, 174, 255);
+}
+input:focus {
+  background-color: #ccc;
+}
+
+.location {
+  font-style: oblique;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: xx-large;
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+img {
+  width: 25rem;
+  border-radius: 40px;
+}
+
+.wave {
+  width: 800px;
+  height: 750px;
+  position: absolute;
+  bottom: -25%;
+  left: 60%;
+  margin-left: -500px;
+  margin-bottom: -500px;
+  border-radius: 35%;
+  background: rgba(255, 255, 255, 0.664);
+  animation: wave 15s infinite linear;
+}
+
+.wave2 {
+  height: 775px;
+  width: 770px;
+  left: 80%;
+  animation: wave2 15s infinite linear;
+}
+
+@keyframes wave {
+  from {
+    transform: rotate(0deg);
+  }
+  from {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes wave2 {
+  from {
+    transform: rotate(0deg);
+  }
+  from {
+    transform: rotate(-360deg);
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  img {
+    width: 20rem;
+  }
+}
+
+@keyframes wapp-appear {
+  from {
+    opacity: 0;
+    transform: translateY(3rem);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
