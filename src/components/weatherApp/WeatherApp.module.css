@@ -1,12 +1,14 @@
 .box {
+  /* margin: -5px; */
+
   text-align: center;
   background-color: rgba(204, 204, 204, 0.425);
-  padding-top: 30px;
-  padding-bottom: 30px;
-  max-width: 40rem;
-  height: 67.5rem;
-  width: 90%;
-  margin: 2rem auto;
+  /* padding-top: 30px;
+  padding-bottom: 30px; */
+  max-width: 35rem;
+  height: 85%;
+  /* width: 90%; */
+  margin: auto;
   animation: wapp-appear 1.5s ease-out forwards;
   border-radius: 45px;
   box-shadow: 3px 6px rgba(51, 71, 71, 0.493);
@@ -14,6 +16,16 @@
   /* position: absolute; */
   /* transform: translate(-50%, -50%); */
   overflow: hidden;
+}
+
+@media only screen and (min-height: 1080px) {
+  .box {
+    height: 60%;
+  }
+}
+
+.info {
+  height: 90%;
 }
 
 input {

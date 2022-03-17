@@ -2,12 +2,19 @@
 
 .App {
   text-align: center;
-
+  justify-content: center;
   font-family: "Fredoka", sans-serif;
+  background-image: url("/src/assets/sky-background.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
 }
 
 .hone {
-  font-size: 7rem;
+  margin-top: 0;
+  font-size: 5rem;
   color: #242582;
 }
 

@@ -1,19 +1,31 @@
+* {
+  margin: 0px;
+}
+
 html {
   height: 100%;
 }
 
+#root {
+  height: 100%;
+}
+
 body {
-  margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
 
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-image: url("/src/assets/sky-background.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+  /* min-height: fit-content; */
+  height: 100%;
+}
+
+@media only screen and (max-width: 400px) {
+  html,
+  body {
+    height: 100%;
+  }
 }
 
 code {
